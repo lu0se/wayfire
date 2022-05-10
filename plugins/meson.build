@@ -1,4 +1,9 @@
 subdir('common')
+
+if get_option('debug_ipc')
+  subdir('ipc')
+endif
+
 subdir('vswitch')
 subdir('wobbly')
 subdir('grid')
